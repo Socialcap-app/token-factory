@@ -1,6 +1,6 @@
 # Custom Token Factory
 
-The Token Factory contracts allow simple creation of communities tokens, following the (Custom Tokens functionallity)[https://docs.minaprotocol.com/zkapps/writing-a-zkapp/feature-overview/custom-tokens]
+The Token Factory contracts allow simple creation of communities tokens, following the [Custom Tokens functionallity](https://docs.minaprotocol.com/zkapps/writing-a-zkapp/feature-overview/custom-tokens)
 
 This repo contains:
 1. A ERC20-like token contract implementation with the TokenContract class that manipulates tokens.
