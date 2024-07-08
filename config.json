@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "deployAliases": {
+    "brk1": {
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/brk1.json",
+      "feepayerKeyPath": "/home/mzito/.cache/zkapp-cli/keys/test01.json",
+      "feepayerAlias": "test01",
+      "fee": "0.1",
+      "smartContract": "RootsContract"
+    },
+    "brk2": {
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/brk2.json",
+      "feepayerKeyPath": "/home/mzito/.cache/zkapp-cli/keys/learn3.json",
+      "feepayerAlias": "learn3",
+      "fee": "0.5",
+      "smartContract": "ElectorsContract"
+    },
+    "plan1": {
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/plan1.json",
+      "feepayerKeyPath": "/home/mzito/.cache/zkapp-cli/keys/deployer.test.json",
+      "feepayerAlias": "deployer.test",
+      "fee": "0.3",
+      "smartContract": "PlanVotingContract"
+    },
+    "com1": {
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/com1.json",
+      "feepayerKeyPath": "/home/mzito/.cache/zkapp-cli/keys/deployer.test.json",
+      "feepayerAlias": "deployer.test",
+      "fee": "0.3",
+      "smartContract": "CommunitiesContract"
+    }
+  }
+}
