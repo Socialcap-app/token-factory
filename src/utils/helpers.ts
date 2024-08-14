@@ -1,10 +1,11 @@
 import {
+    Field,
     PrivateKey,
     PublicKey,
     TokenId,
 } from 'o1js';
 
-export { addresses, keys, randomAccounts, tokenIds };
+export { addresses, keys, randomAccounts, tokenIds, stringToBigInt, bigintToString };
 
 
 const savedKeys = [
@@ -49,3 +50,32 @@ let tokenIds = {
     Y: TokenId.derive(addresses.tokenY),
     lqXY: TokenId.derive(addresses.dex),
 };
+
+
+/**
+ * Convert a string to a BigInt
+ * @param str - The string to convert
+ * @returns - The BigInt representation of the string
+ */
+function stringToBigInt(str: string): bigint {
+    let bigint = BigInt(0);
+    for (let i = 0; i < str.length; i++) {
+      bigint = bigint * BigInt(256) + BigInt(str.charCodeAt(i));
+    }
+    return bigint;
+  }
+  
+  /**
+   * Convert a BigInt back to a string
+   * @param bigint - The BigInt to convert
+   * @returns - The string representation of the BigInt
+   */
+  function bigintToString(field: Field): string {
+    let str = '';
+    let bigint = field.toBigInt();
+    while (bigint > 0) {
+      str = String.fromCharCode(Number(bigint % BigInt(256))) + str;
+      bigint = bigint / BigInt(256);
+    }
+    return str;
+  }

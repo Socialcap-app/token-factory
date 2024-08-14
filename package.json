@@ -1,7 +1,7 @@
 {
   "name": "socialcap-token-factory",
   "version": "0.1.0",
-  "description": "Socialcap communities sustom token factory ",
+  "description": "Socialcap communities custom token factory ",
   "type": "module",
   "main": "build/src/index.js",
   "types": "build/src/index.d.ts",
@@ -11,7 +11,7 @@
     "coverage": "node --experimental-vm-modules --experimental-wasm-threads node_modules/jest/bin/jest.js --coverage",
     "format": "prettier --write --ignore-unknown **/*",
     "NO-prepare": "husky install",
-    "test": "node --experimental-vm-modules --experimental-wasm-threads node_modules/jest/bin/jest.js",
+    "test": "node node_modules/jest/bin/jest.js",
     "testw": "node --experimental-vm-modules --experimental-wasm-threads node_modules/jest/bin/jest.js --watch",
     "lint": "npx eslint src/* --fix"
   },
@@ -39,7 +39,7 @@
   "dependencies": {
     "axios": "^1.4.0",
     "dotenv": "^16.3.1",
-    "o1js": "^1.4.0"
+    "o1js": "^1.6.0"
   },
   "repository": {
     "type": "git",
